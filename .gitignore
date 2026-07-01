@@ -1,0 +1,65 @@
+# Environment
+.env
+.env.*
+!.env.example
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data & models (large binaries — store in S3/DVC)
+data/documents/
+*.pt
+*.pkl
+*.joblib
+*.onnx
+bm25_index.pkl
+
+# Qdrant local storage
+qdrant_storage/
+
+# Logs
+*.log
+logs/
+
+# Coverage
+.coverage
+htmlcov/
+coverage.xml
+
+# Test cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker volumes (local dev)
+postgres_data/
+redis_data/
+prometheus_data/
+grafana_data/
+mlflow_artifacts/
+
+# Generated images from notebook
+*.png
+!docs/*.png
